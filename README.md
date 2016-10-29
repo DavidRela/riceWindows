@@ -50,7 +50,7 @@ In my case I use:
 5. Disable Windows Defender + Notifications.
 6. Configure NVIDIA 3D Settings like this:
 
-![Desktop Screenshot](/screenshots/screenshot04.png?raw=true "")
+    ![Desktop Screenshot](/screenshots/screenshot04.png?raw=true "")
 
 7. WINDOWS KEY + R > `msconfig`: Boot Tab > No GUI Boot > Timeout = 03 seconds > Advanced Options > Number of processors = Max availabes.
 8. Task Manager > Startup > Disable everything you don't want.
