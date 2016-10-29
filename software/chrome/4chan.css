@@ -1,0 +1,130 @@
+hr {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+#bannerCnt {
+  display: none;
+}
+
+.topad {
+  display: none;
+}
+
+.ad-plea {
+  display: none;
+}
+
+.abovePostForm {
+  display: none;
+}
+
+.aboveMidAd {
+  display: none;
+}
+
+.belowLeaderboard {
+  display: none;
+}
+
+#blotter {
+  display: none;
+}
+
+.middlead {
+  display: none !important;
+}
+
+#toggleMsgBtn {
+  display: none;
+}
+
+.globalMessage {
+  display: none;
+}
+
+.extButton {
+  display: none;
+}
+
+.absBotDisclaimer {
+  display: none;
+}
+
+#footer-links {
+  display: none;
+}
+
+.center {
+  display: none !imporant;
+  visibility: hidden !important;
+}
+
+.sideArrows {
+  display: none !imporant;
+  visibility: hidden !important;
+}
+
+div.boardSubtittle {
+  display: none !imporant;
+  visibility: hidden !important;
+}
+
+#boardNavDesktopFoot {
+  display: none !imporant;
+  visibility: hidden !important;
+}
+
+
+
+
+
+body {
+  width: 90% !important;
+  margin: 0 auto !important;
+}
+
+#togglePostFormLink {
+  margin: -112px 0 40px 212px !important;
+  text-align: left !important;
+  font-size: 14px !important;
+}
+
+#crtl-top {
+  margin-bottom: 40px !important;
+}
+
+.thread {
+  margin-top: 30px !important;
+  width: 70%;
+  padding: 10px 10px 10px 0;
+}
+
+div.boardBanner {
+  margin-top: 60px !important;
+  text-align: left !important;
+}
+
+div.pagelist {
+  margin: 30px auto 0 auto !important;
+  width: 100%;
+}
+
+div.replay {
+  border: 0 !important;
+  opacity: 0.9;
+}
+
+div.post {
+  border: 0 !important;
+}
+
+#boardNavDesktop {
+  position: fixed;
+  width: 100%;
+  padding: 5px 0 5px 0;
+  top: 0;
+  left: 0;
+  background: white;
+  text-align: center;
+}
