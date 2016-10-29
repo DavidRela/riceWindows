@@ -48,7 +48,8 @@ In my case I use:
 3. Control Panel > Power Options > High Performance (Disable Sleep).
 4. Let the system idle for 2 minutes to get every proccess loaded. Then exec this command on a *cmd* with admin priviledges: `winsat formal`.
 5. Disable Windows Defender + Notifications.
-6. Configure NVIDIA 3D Settings like this: 
+6. Configure NVIDIA 3D Settings like this:
+
 ![Desktop Screenshot](/screenshots/screenshot04.png?raw=true "")
 
 7. WINDOWS KEY + R > `msconfig`: Boot Tab > No GUI Boot > Timeout = 03 seconds > Advanced Options > Number of processors = Max availabes.
