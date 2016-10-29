@@ -3,9 +3,9 @@ Tools, tutorials, and resources to get the best possible experience on an Micros
 
 ## Screenshots
 This are some screenshots of the final result.
-![Desktop Screenshot](/screenshots/screenshot01.jpg?raw=true "")
-![Desktop Screenshot](/screenshots/screenshot02.jpg?raw=true "")
-![Desktop Screenshot](/screenshots/screenshot03.jpg?raw=true "")
+![Desktop Screenshot](screenshots/screenshot01.JPG?raw=true "")
+![Desktop Screenshot](screenshots/screenshot02.JPG?raw=true "")
+![Desktop Screenshot](screenshots/screenshot03.JPG?raw=true "")
 
 ## Index
 1. Download the needed files.
