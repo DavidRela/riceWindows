@@ -1,0 +1,189 @@
+/* Import XUL */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Prevent tab overflow */
+@-moz-document url("chrome://browser/content/browser.xul") {
+  #tabbrowser-tabs .tabbrowser-tab:not([pinned=true])[fadein] {
+    min-width: 1px !important;
+    max-width: 250px !important;
+  }
+  #tabbrowser-tabs toolbarbutton.scrollbutton-up,
+  #tabbrowser-tabs toolbarbutton.scrollbutton-down,
+  #tabbrowser-tabs spacer.arrowscrollbox-overflow-end-indicator {
+    display: none !important;
+  }
+}
+/********************************************************************/
+
+/* Only show url bar actions on hover */
+.urlbar-page-action:not(#star-button-box):not([open]) {
+  opacity: 0;
+  transition: all 0.15s;
+  transition-delay: 0.5s;
+}
+
+#urlbar-container:hover .urlbar-page-action:not(#star-button-box):not(#pageActionSeparator)  {
+  opacity: 1;
+}
+/********************************************************************/
+
+/* Only show url-bar icons on hover */
+#nav-bar-customization-target > .chromeclass-toolbar-additional, #nav-bar-overflow-button:not([disabled]) {
+  overflow: hidden;
+  width: 0;
+  transition: all 0.15s;
+  transition-delay: 0.8s;
+}
+
+#nav-bar:hover #nav-bar-customization-target > .chromeclass-toolbar-additional, #nav-bar:hover #nav-bar-overflow-button, #nav-bar [open], #downloads-button[attention] {
+  width: 32px;
+}
+/********************************************************************/
+
+/* Hide url bar actions separator */
+#pageActionSeparator {
+  display: none;
+}
+/********************************************************************/
+
+/* Hide tab bar gap in windowed mode */
+.titlebar-placeholder {
+  width: 0px !important;
+  opacity: 0 !important;
+}
+/********************************************************************/
+
+/* Hide unused buttons */
+#back-button[disabled], #forward-button[disabled], #feed-button[disabled] {
+  display: none;
+}
+
+#wrapper-feed-button > #feed-button, #wrapper-back-button > #back-button, #wrapper-forward-button > #forward-button {
+  display: inherit;
+}
+/********************************************************************/
+
+/* No selection highlight when the urlbar is active */
+#urlbar {
+  border-color: transparent !important;
+}
+/********************************************************************/
+
+/* Hide 1px border under inactive tabs */
+:root {
+  --tabs-border: transparent;
+}
+/********************************************************************/
+
+/* Find Bar */
+.browserContainer > findbar {
+  -moz-box-ordinal-group: 0;
+  position: fixed !important;
+  right: 1em;
+  border: 1px solid threedshadow !important;
+
+
+  border-top: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+.findbar-closebutton {
+  margin-inline-start: 0.5em !important;
+  vertical-align: middle !important;
+  margin-bottom: 0.25em !important;
+  height: inherit !important;
+}
+/********************************************************************/
+
+/* Make compact mode more compact */
+#nav-bar{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+/********************************************************************/
+
+/* Set non-active tab background color */
+#main-window[lwthemetextcolor="bright"] .tabbrowser-tab:not([selected="true"]) {
+    background-color: #323234 !important;
+    border-right: 0.1px solid black !important;
+    opacity: .6;
+}
+/********************************************************************/
+
+/* Remove the colored line on top */
+#TabsToolbar .tabbrowser-tab .tab-line,
+.tabbrowser-tab:hover .tab-line:not([selected="true"]) {
+    visibility: hidden;
+    display: none !important;
+}
+/********************************************************************/
+
+/* Remove the short vertical lines between bg tabs */
+.tabbrowser-tab::before, .tabbrowser-tab::after {
+  border: none !important;
+}
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+  border: none !important;
+}
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+  border-left: none !important;
+}
+:root {
+  --tabs-border: transparent !important;
+}
+/********************************************************************/
+
+/* Remove the pre-tab box */
+.titlebar-placeholder[type="pre-tabs"] {
+    display: none !important;
+}
+/********************************************************************/
+
+/* Remove the line under the adress bar */
+#nav-bar::after {
+    height: 0px !important;
+    display: none !important;
+}
+#nav-bar {
+  margin-bottom: -1px !important;
+  padding-bottom: 1px !important;
+}
+/********************************************************************/
+
+/* Remove the line on top of the window, above tabs */
+.titlebar-placeholder[type="post-tabs"] {
+  display:none !important;
+}
+/********************************************************************/
+
+/* Edit Close/Minimize/Maximize buttons */
+#titlebar-min, #titlebar-max, #titlebar-close { 
+  -moz-appearance: none !important;
+  background-color: transparent !important;
+  width: 10px !important;
+  height: 10px !important; 
+}
+
+#titlebar-min:hover, #titlebar-max:hover, #titlebar-close:hover {
+  opacity: 0.7;
+}
+/********************************************************************/
+
+/* Tab colors & style */
+.tab-background[selected="true"] {
+    background-attachment: none !important;
+    background-color: #313133 !important;
+    background-image: none !important;
+}
+
+.tab-background {
+    background-attachment: none !important;
+    background-color: #222 !important;
+    background-image: none !important;
+}
+
+#TabsToolbar .tabbrowser-tab[selected] {
+    font-weight: bold !important;
+}
+/********************************************************************/
